@@ -12,8 +12,12 @@ class SpringPropagationDemoApplicationTests {
     private OutService outService;
 
     @Test
-    public void noTransactionalTest() {
-        outService.transactionalTest();
+    public void test() {
+//        outService.transactionalTestA();
+        outService.transactionalTestB();
+//        outService.transactionalTestC();
+//        outService.noTransactionalTestA();
+//        outService.noTransactionalTestB();
     }
 
 }
