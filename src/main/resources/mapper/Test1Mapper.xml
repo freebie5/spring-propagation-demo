@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sy.springpropagationdemo.mapper.Test1Mapper">
+
+    <select id="selectById" resultType="Test1">
+        select id, name from test1
+        where id=#{id}
+    </select>
+
+    <insert id="insert" parameterType="Test1">
+        insert into test1(id, name)
+        values(#{id}, #{name})
+    </insert>
+
+</mapper>
